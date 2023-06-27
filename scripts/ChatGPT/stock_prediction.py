@@ -121,9 +121,9 @@ class STOCK_PREDICTION:
             self.simlog.info("Percentage Change = " + str(i_percentage_change))
             if float(self.master_list[i]['RMSE']) < 60:
                 if i_percentage_change:
-                    if i_percentage_change > 10:
+                    if i_percentage_change > 12:
                         i_score_buy += 1
-                    elif i_percentage_change < 4:
+                    elif i_percentage_change < 7:
                         i_score_sell += 1
                     else:
                         continue
